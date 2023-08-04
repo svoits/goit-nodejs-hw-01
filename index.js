@@ -1,8 +1,6 @@
 const argv = require("yargs").argv;
-// const { hideBin } = require("yargs/helpers");
 const contacts = require("./contacts");
 
-// TODO: рефакторити
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
